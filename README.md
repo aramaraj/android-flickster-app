@@ -41,7 +41,7 @@
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](http://g.recordit.co/U89a8g47TW.gif)
+![Video Walkthrough](/walkthrough.gif)
 
 
 ## Notes
