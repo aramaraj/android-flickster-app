@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -9,17 +8,13 @@
     android:layout_height="match_parent"
     android:layout_alignParentBottom="true"
     android:layout_centerHorizontal="true"
-    android:paddingRight="15dp"
+    android:paddingRight="5dp"
     android:paddingLeft="15dp"
-    android:paddingTop="15dp">
-
-
+    android:paddingTop="5dp">
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
         <ImageView
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
@@ -27,7 +22,6 @@
             android:id="@+id/ivPoster"
             tools:src="@mipmap/movie_ic"
             />
-
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +31,6 @@
             android:measureWithLargestChild="false"
             android:id="@+id/tableLayout"
             android:layout_margin="10dp">
-
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -51,6 +44,7 @@
                     android:textSize="20sp"
                     android:textColor="@android:color/holo_blue_bright"
                     />
+
             </TableRow>
 
             <TableRow
@@ -70,7 +64,7 @@
                         android:id="@+id/tvExtraRated"
 
                         android:textColor="@android:color/white"
-
+                        android:layout_marginLeft="5dp"
                         android:layout_row="0"
                         android:layout_column="0" />
 
@@ -82,9 +76,9 @@
                         android:id="@+id/tvExtraYear"
 
                         android:textColor="@android:color/white"
-
-                        android:layout_row="2"
-                        android:layout_column="0" />
+                        android:layout_marginLeft="5dp"
+                        android:layout_row="0"
+                        android:layout_column="2" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -93,9 +87,9 @@
                         android:id="@+id/tvExtraRuntime"
 
                         android:textColor="@android:color/white"
-
-                        android:layout_row="1"
-                        android:layout_column="0" />
+                        android:layout_marginLeft="5dp"
+                        android:layout_row="0"
+                        android:layout_column="1" />
 
                 </GridLayout>
 
@@ -115,7 +109,7 @@
                     android:layout_gravity="start|center_horizontal"
                     >
                     <ImageView
-                        android:layout_width="43dp"
+                        android:layout_width="55dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/imdbPoster"
                         android:src="@mipmap/rating_ic" />
@@ -150,8 +144,8 @@
                         android:id="@+id/tvDirector"
                         android:textColor="@android:color/white"
 
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:textStyle="italic"
                         android:layout_row="2"
                         android:layout_column="1"/>
@@ -208,33 +202,20 @@
                         android:layout_marginStart="5dp"
                         android:layout_row="4"
                         android:layout_column="1"/>
-
-
-                </GridLayout>
-
-
-
+               </GridLayout>
             </TableRow>
-
-
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imgclose"
+                android:src="@drawable/closescreen"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:focusableInTouchMode="true"
+                />
 
         </TableLayout>
 
-        <Button
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="close"
-            android:id="@+id/buttonClose"
-
-            android:layout_below="@+id/tableLayout"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="78dp"
-            />
-
     </RelativeLayout>
-
-
-
 </FrameLayout>
 

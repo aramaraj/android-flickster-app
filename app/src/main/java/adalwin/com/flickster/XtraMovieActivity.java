@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,7 +31,8 @@ public class XtraMovieActivity extends AppCompatActivity {
     public static TextView tvRuntime;
     public static TextView tvDirector;
     public static TextView tvActors;
-    public Button buttonClose;
+    //public Button buttonClose;
+   public  ImageButton buttonClose;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +47,9 @@ public class XtraMovieActivity extends AppCompatActivity {
         tvRuntime= (TextView)findViewById(R.id.tvExtraRuntime);
         tvDirector = (TextView)findViewById(R.id.tvDirector);
         tvActors=(TextView)findViewById(R.id.tvActors);
-        buttonClose=(Button)findViewById(R.id.buttonClose) ;
+        //buttonClose=(Button)findViewById(R.id.buttonClose) ;
+        buttonClose=(ImageButton)findViewById(R.id.imgclose) ;
+
 
         buttonClose.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,8 +88,8 @@ public class XtraMovieActivity extends AppCompatActivity {
         tvTitle.setText(moviesExtras.getTitle());
         tvRated.setText(moviesExtras.getRated());
         tvRating.setText(moviesExtras.getImdbRating());
-        tvYear.setText(moviesExtras.getYear());
-        tvRuntime.setText(moviesExtras.getRuntime());
+        tvYear.setText("| "+moviesExtras.getYear());
+        tvRuntime.setText("| "+moviesExtras.getRuntime());
         tvDirector.setText(moviesExtras.getDirector());
         tvActors.setText(moviesExtras.getActors());
         ivPoster.setImageResource(0);
