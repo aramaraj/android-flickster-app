@@ -43,6 +43,8 @@ Here's a walkthrough of implemented user stories:
 
 ![Video Walkthrough](/walkthrough.gif)
 
+(/Landscape_withBackdrop.gif)
+
 
 ## Notes
 
