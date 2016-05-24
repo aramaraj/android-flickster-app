@@ -40,8 +40,7 @@ public class MoviesAdapter extends ArrayAdapter<Movie>{
 
         // Get the data item for this position
         Movie movie = (Movie)getItem(position);
-
-/** --Without view holder pattern--**/
+        /** --Without view holder pattern--**/
        /* // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_movie, parent, false);
@@ -90,7 +89,7 @@ public class MoviesAdapter extends ArrayAdapter<Movie>{
 
         int orientation = getContext().getResources().getConfiguration().orientation;
         if(orientation== Configuration.ORIENTATION_LANDSCAPE){
-            Picasso.with(getContext()).load(movie.getPosterPath()).into(viewHolder.ivPoster);
+            Picasso.with(getContext()).load(movie.getBackdropPath()).into(viewHolder.ivPoster);
             Log.d("DEBUG", "Configuration.ORIENTATION_LANDSCAPE"+ Configuration.ORIENTATION_LANDSCAPE);
         }else{
             Picasso.with(getContext()).load(movie.getPosterPath()).into(viewHolder.ivPoster);
