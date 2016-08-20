@@ -69,16 +69,12 @@ public class MoviesAdapter extends ArrayAdapter<Movie>{
         MovievViewHolder  viewHolder; // view lookup cache stored in tag
         if (convertView == null) {
             viewHolder = new MovievViewHolder();
-
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.item_movie, parent, false);
-
             viewHolder.txTitle = (TextView)convertView.findViewById(R.id.tvTitle);
             viewHolder.txOverview = (TextView)convertView.findViewById(R.id.tvOverview);
-
             viewHolder.ivPoster = (ImageView) convertView.findViewById(R.id.ivPoster);
             viewHolder.ivPoster.setImageResource(0);
-
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (MovievViewHolder) convertView.getTag();
